@@ -60,6 +60,9 @@ showMore.addEventListener("click",(event)=>{
 
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
+const link = document.querySelector('footer a');
+const btnMain = document.querySelector('.searchbtn');
+const card = document.querySelectorAll('.card');
 
 toggle.addEventListener("click",function(){
     this.classList.toggle('bi-moon-fill');
@@ -68,11 +71,37 @@ toggle.addEventListener("click",function(){
         this.style.color = "black";
         body.style.backgroundColor = "white";
         body.style.color = "black";
-        body.style.transition = ".3s ease-in-out";
+        body.style.transition = ".2s ease-in-out";
+        btnMain.style.backgroundColor = "";
+        btnMain.style.color = "";
+        btnMain.style.boxShadow = "";
+        showMore.style.backgroundColor = "";
+        showMore.style.color = "";
+        showMore.style.boxShadow = "";
+        link.style.color = "rgb(29, 60, 126)";
+        formInputEl.style.color = "black";
+        formInputEl.style.boxShadow = "0 0 6px rgba(0,0,0,0.2)";
+        formInputEl.style.backgroundColor = "white";
+        for(var i=0;i<card.length;i++){
+            card[i].style.boxShadow = "";
+        }
     }else{
         this.style.color = "white";
         body.style.backgroundColor = "black";
         body.style.color = "white";
-        body.style.transition = ".3s ease-in-out";
+        body.style.transition = ".2s ease-in-out";
+        btnMain.style.backgroundColor = "skyblue";
+        btnMain.style.color = "black";
+        btnMain.style.boxShadow = "0 0 6px rgb(82, 167, 237,0.944)";
+        showMore.style.backgroundColor = "skyblue";
+        showMore.style.color = "black";
+        showMore.style.boxShadow = "0 0 6px rgb(82, 167, 237,0.944)";
+        link.style.color = "lime";
+        formInputEl.style.color = "white";
+        formInputEl.style.boxShadow = "0 0 6px rgb(82, 167, 237,0.944)";
+        formInputEl.style.backgroundColor = "black";
+        for(var i=0;i<card.length;i++){
+            card[i].style.boxShadow = "0 0 6px rgb(82, 167, 237,0.944)";
+        }
     }
 })
