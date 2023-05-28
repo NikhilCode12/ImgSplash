@@ -86,7 +86,7 @@ section img:hover{
 section .card-caption{
     padding: 10px;
     font-size: 1.2rem;
-    color: #333;
+    color: "black";
     text-transform: capitalize;
 }
 
@@ -119,18 +119,6 @@ footer a{
 
 footer a:hover{
     color: rgba(29, 60, 126, 0.824);
-}
-
-.dark-mode{
-    background-color: black;
-    color: white;
-    transition: 2s;
-}
-
-.light-mode{
-    background-color: white;
-    color: black;
-    transition: 2s;
 }
 
 /* making our app responsive */
