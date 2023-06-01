@@ -153,6 +153,7 @@ footer a:hover{
         transform: scale(1.5);
         position: absolute;
         right: 0;
+        /* this change I did, I made the logo a bit more aligned. */
         top: 55px;
     }
 }
